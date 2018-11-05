@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 1</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body ng-app>
+  <h1>Exercices AngularJS - Partie Bonus  Exercice 1</h1>
+  <h3>Faire un formulaire de saisie d'adresse e-mail. Si l'adresse comporte le symbole @, alors une div verte apparait. S'il n'est pas là, une div rouge apparaît pour avertir l'utilisateur que sa saisie est incorrecte.</h3>
+  <form name="myForm">
+    <input type="email" name="myInput" ng-model="myInput">
+    <span class="shadowboxb" ng-show=myForm.myInput.$valid>
+    </span>
+    <span class="shadowboxa" ng-show=myForm.myInput.$error.email>
+    </span>
+  </form>
+</body>
+</html>
